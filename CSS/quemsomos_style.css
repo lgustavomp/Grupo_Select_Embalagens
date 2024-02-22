@@ -1,0 +1,208 @@
+.BG_08 {
+    /* height: 396px; */
+    overflow-x: hidden;
+    background-image: url('/Assets/JPG/BG_03.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wrapper_BG_08 {
+    height: 396px;
+    max-width: var(--workable-area);
+    margin: 0 auto 70px auto;
+    position: relative;
+}
+
+.BG_08 .wrapper_BG_08 > span {
+    font-size: 62px;
+    line-height: 58px;
+    letter-spacing: -2px;
+    font-family: 'DM Serif Display', serif;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+  /* ----------09---------- */
+
+.BG_09 {
+    margin: 0 auto;
+    max-width: 2100px;
+    overflow: hidden;
+}
+
+.BG_09 .wrapper_BG_09 {
+    max-width: var(--workable-area);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    position: relative;
+}
+
+.wrapper_BG_09 .quem_somos {
+    min-width: 300px;
+    padding: 0 20px;
+}
+
+.wrapper_BG_09 .quem_somos > p:first-child {
+    padding: 20px 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #0d2c3f;
+}
+.wrapper_BG_09 .quem_somos > p:last-child {
+    font-family: 'DM Serif Display', serif;
+    font-size: 50px;
+    line-height: 46px;
+    font-weight: 400;
+    color: #ccc5a9;
+}
+
+.wrapper_BG_09 .desc {
+    min-width: 300px;
+    padding: 30px 20px 0 20px;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.wrapper_BG_09 .desc > p {
+    font-size: 26px;
+    line-height: 40px;
+    color: #606060;
+    margin: 30px auto;
+}
+.wrapper_BG_09 .desc > p > b {
+    color: #0d2c3f;
+}
+
+.wrapper_BG_09 .desc > a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0d2c3f;
+    text-decoration: none;
+
+}
+.wrapper_BG_09 .desc > a > img {
+    object-fit: contain;
+    margin: 60px 0;
+}
+
+.wrapper_BG_09 > img {
+    min-height: 300px;
+    margin: auto 20px 120px 20px;
+    align-self: self-end;
+}
+
+@media (max-width: 576px) {
+    .BG_09 .wrapper_BG_09 {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .wrapper_BG_09 img {
+        justify-self: center;
+    }
+    .wrapper_BG_09 .desc {
+        grid-column-start: auto;
+        grid-row-start: auto;
+        grid-row-end: auto;
+    }
+    .wrapper_BG_09 .desc > p {
+        font-size: 20px;
+        text-align: justify;
+    }
+
+}
+
+  /* ----------10---------- */
+
+.BG_10 {
+    margin: 0 auto;
+    max-width: 2100px;
+}
+
+.BG_10 .wrapper_BG_10 {
+    max-width: var(--workable-area);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.BG_10 .wrapper_BG_10 hr {
+    border: 1px solid gray;
+    width: 100%;
+}
+
+.BG_10 .wrapper_BG_10 > a {
+    margin: 100px auto 350px auto;
+    font-family: 'DM Serif Display', serif;
+    font-size: 36px;
+    line-height: 44px;
+    text-decoration: none;
+    color: #cdc5a6;
+    padding: 25px 85px;
+    background-color: transparent;
+    border: 3px solid #cdc5a6 ;
+    border-radius: 47px;
+}
+
+@media (max-width: 576px) {
+    .BG_10 .wrapper_BG_10 > a {
+        padding: 25px 25px;
+        border-radius: 47px;
+        margin: 100px 10px;
+        text-align: center;
+    }
+}
+
+  /* ----------11---------- */
+
+.BG_11 {
+    margin: 0 auto;
+    max-width: 2100px;
+    min-height: 120px;
+    background-color: #002c41;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.BG_11 .wrapper_BG_11 {
+    max-width: var(--workable-area);
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items:center;
+    gap: 70px;
+}
+
+@media (max-width: 576px) {
+    .BG_11 .wrapper_BG_11 {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0px;
+    }
+}
+
+.BG_11 .wrapper_BG_11 > p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fefdfd;
+    margin: 20px;
+}
+
+.BG_11 .wrapper_BG_11 > p:first-child {
+    font-weight: 400;
+
+}
+
+.BG_11 .wrapper_BG_11 .redes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px;
+}

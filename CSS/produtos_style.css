@@ -1,0 +1,212 @@
+.BG_12 {
+    /* height: 396px; */
+    max-width: 2100px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    background-image: url('/Assets/JPG/BG_04.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wrapper_BG_12 {
+    height: 396px;
+    max-width: var(--workable-area);
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.BG_12 .wrapper_BG_12 > span {
+    font-size: 62px;
+    line-height: 58px;
+    letter-spacing: -2px;
+    font-family: 'DM Serif Display', serif;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+  /* ----------13---------- */
+
+.BG_13 {
+    margin: 0 auto;
+    max-width: 2100px;
+}
+
+.BG_13 .wrapper_BG_13 {
+    max-width: var(--workable-area);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 20px; */
+    position: relative;
+    justify-items: center;
+    align-items: center;
+}
+
+.wrapper_BG_13 > h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 62px;
+    line-height: 58px;
+    font-weight: 400;
+    color: #0d2c3f;
+    letter-spacing: -2px;
+    margin: 150px auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.wrapper_BG_13 > img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper_BG_13 .bg_dourado .bg_dourado_conteudo > img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.wrapper_BG_13 .texto_produtos {
+    max-width: 470px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper_BG_13 .texto_produtos > span {
+    margin: 20px;
+}
+
+.wrapper_BG_13 .texto_produtos span:first-child{
+    font-family: 'DM Serif Display', serif;
+    font-size: 32px;
+}
+
+.wrapper_BG_13 .texto_produtos span:last-child{
+    font-size: 26px;
+    line-height: 36px;
+}
+
+.wrapper_BG_13 .bg_dourado {
+    margin: 70px 0;
+    padding-top: 70px;
+    width: 100%;
+    background-color: #cdc5a6;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: subgrid;
+    justify-items: center;
+    align-items: center;
+}
+.wrapper_BG_13 .bg_dourado .bg_dourado_conteudo {
+    margin-bottom: 170px;
+    position: relative;
+}
+
+.wrapper_BG_13 .bg_dourado .bg_dourado_conteudo > span {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -110px;
+    font-size: 36px;
+    font-weight: 300;
+    color: #0d2c3f;
+}
+
+@media (max-width: 576px) {
+    .BG_13 .wrapper_BG_13 {
+        grid-template-columns: 1fr;
+    }
+    .wrapper_BG_13 .bg_dourado {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .wrapper_BG_13 .bg_dourado .bg_dourado_conteudo > span {
+        font-size: 28px;
+    }
+    .wrapper_BG_13 > h2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+}
+
+  /* ----------14---------- */
+
+.BG_14 {
+    margin: 0 auto;
+    max-width: 2100px;
+}
+
+.BG_14 .wrapper_BG_14 {
+    max-width: var(--workable-area);
+    margin: 70px auto;
+    padding: 60px 10px 120px 10px;
+    background-color: #0d2c3f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.BG_14 .wrapper_BG_14 > span:nth-child(2) {
+
+    font-family: 'DM Serif Display', serif;
+    font-size: 30px;
+    color: #cdc5a6;
+}
+.BG_14 .wrapper_BG_14 > span:nth-child(3) {
+    max-width: 700px;
+    text-align: center;
+    font-size: 27px;
+    line-height: 48px;
+    color: white;
+}
+
+  /* ----------15---------- */
+
+.BG_15 {
+    margin: 0 auto;
+    max-width: 2100px;
+}
+
+.BG_15 .wrapper_BG_15 {
+    max-width: var(--workable-area);
+    margin: 20px auto 400px auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.BG_15 .wrapper_BG_15 > a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0d2c3f;
+    text-decoration: none;
+    position: absolute;
+    right: 0;
+    bottom: -250px;
+}
+.BG_15 .wrapper_BG_15 > a > img {
+    object-fit: contain;
+    margin: 60px 0;
+}
+
+@media (max-width: 576px) {
+    .BG_15 .wrapper_BG_15 {
+        margin: 20px auto 100px auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .BG_15 .wrapper_BG_15 > a {
+        right: 30px;
+        bottom: -125px;
+    }
+
+}
