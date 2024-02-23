@@ -100,7 +100,7 @@
 .BG_02 {
     height: 810px;
     overflow-x: hidden;
-    background-image: url('/Assets/JPG/BG_01_alt.jpg');
+    background-image: url('../Assets/JPG/BG_01_alt.jpg');
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -267,7 +267,7 @@
     max-width: 2100px;
     margin: 0 auto;
     overflow-x: hidden;
-    background-image: url('/Assets/JPG/BG_02_alt.jpg');
+    background-image: url('../Assets/JPG/BG_02_alt.jpg');
     background-position: 50% top;
     background-repeat: no-repeat;
     background-color: #002d42;
@@ -467,7 +467,7 @@
     height: 445px;
     margin: 0 auto;
     overflow-x: hidden;
-    background-image: url('/Assets/JPG/mockup_maps.jpg');
+    background-image: url('../Assets/JPG/mockup_maps.jpg');
     background-position: 50% top;
     background-repeat: no-repeat;
 }

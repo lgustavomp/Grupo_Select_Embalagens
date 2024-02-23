@@ -1,7 +1,7 @@
 .BG_08 {
     /* height: 396px; */
     overflow-x: hidden;
-    background-image: url('/Assets/JPG/BG_03.jpg');
+    background-image: url('../Assets/JPG/BG_03.jpg');
     background-position: center;
     background-repeat: no-repeat;
 }
