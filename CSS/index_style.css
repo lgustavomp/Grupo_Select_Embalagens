@@ -54,7 +54,6 @@
 }
 
 .dropdown-menu .dropdown-item {
-    color: white;
     font-size: 13px;
     font-weight: 500;
     padding: 10px 20px;
@@ -92,6 +91,13 @@
     }
     .navbar-nav {
         gap: 30px;
+    }
+    .dropdown-menu .dropdown-item {
+        color: white;
+        padding: 30px 20px;
+    }
+    .dropdown-menu .dropdown-item > br {
+        display: none;
     }
 }
 
@@ -259,6 +265,16 @@
     padding: 0 10px 20px 10px;
     font-size: 26px;
     line-height: 39px;
+}
+
+@media (max-width: 576px) {
+    .BG_04 {
+        padding-top: 0;
+    }
+    .BG_04 .wrapper_BG_04 .text_wrapper > p {
+        font-size: 22px;
+        line-height: 36px;
+    }
 }
 
  /* ----------05---------- */
