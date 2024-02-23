@@ -13,6 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./CSS/index_style.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="./js/recaptcha.js" defer></script>
 </head>
 
 <body>
@@ -101,15 +102,14 @@
         </div>
     </div>
     <div class="BG_06">
-        <form class="wrapper_BG_06" id="contato" action="http://httpbin.org/post" method="POST">
+        <form class="wrapper_BG_06" id="contato">
             <span class="text_contato grid_col_1_2">Contato</span>
             <span class="text_local grid_col_2_4">Estamos numa localização muito estratégica. Entre em contato para agendarmos uma visita!</span>
             <input type="text" placeholder="NOME" class="grid_col_1_3" required>
             <input type="text" placeholder="EMAIL" class="grid_col_1_3" required>
             <input type="text" placeholder="ASSUNTO" class="grid_col_1_3" required>
             <div class="text_area grid_col_3_4 grid_row_2_5">
-                <textarea name="messange" rows="auto" cols="auto" placeholder="DIGITE SUA MENSAGEM" required></textarea> <!--  php mailer -->
-                <!-- <a href="#" id="sendMSG">&#8594;</a> -->
+                <textarea rows="auto" cols="auto" placeholder="DIGITE SUA MENSAGEM" required></textarea> <!--  php mailer -->
                 <button id="sendMSG" type="submit">&#8594;</button>
             </div>
             <div class="wrapper_logo_footer grid_col_1_3">
