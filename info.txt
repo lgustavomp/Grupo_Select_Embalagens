@@ -15,14 +15,14 @@ mailer pkkf yhfa aeha gxbu
 
 
 -----------------
-elastice mail
+smtpJS / elastice mail
 
-user: GSE@gmail.com
-pass: CC2A072D7274FF2E58EE39DF05154DA7471A
+user: form.gse@gmail.com
+pass: A11E6D748AC702335D9E99BE2AF60F755E9B
 server: smtp.elasticemail.com
 port: 2525
 
-smtpJS token: 31fd3af2-986c-40dd-8ab1-670736672d7b
+smtpJS token: 28a8777e-0b48-4f71-869c-a2eaaa1c72fe
 
 ------------------
 gmail

@@ -345,6 +345,12 @@
     background-color: #001d2e;
 }
 
+.error::placeholder{
+    /* border: 5px red solid;
+    box-sizing: border-box; */
+    color: red;
+    font-weight: 500;
+}
 .BG_06 .wrapper_BG_06 {
     max-width: 1050px;
     margin: 70px auto;

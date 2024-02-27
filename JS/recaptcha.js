@@ -1,7 +1,12 @@
 const form = document.querySelector('form');
 
 const nome = document.getElementById('nome');
+const email = document.getElementById('email');
+const assunto = document.getElementById('assunto');
+const mensagem = document.getElementById('mensagem');
+
 console.log(nome)
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
@@ -14,14 +19,18 @@ form.addEventListener('submit', (e) => {
     const fd = new FormData(e.target);
     const params = new URLSearchParams(fd);
 
+    const emailBody = 
+        `Nome: ${nome.value}<br>
+        Email: ${email.value}<br>
+        Assunto: ${assunto.value}<br>
+        Mensagem: ${mensagem.value}`;
+
     Email.send({
-        Host : "smtp.gmail.com",
-        Username : "form.gse@gmail.com",
-        Password : "gse.mailer.2024",
+        SecureToken : "28a8777e-0b48-4f71-869c-a2eaaa1c72fe",
         To : 'form.gse@gmail.com',
-        From : "you@isp.com",
-        Subject : "This is the subject",
-        Body : "And this is the body"
+        From : "form.gse@gmail.com",
+        Subject : assunto.value,
+        Body : emailBody
     }).then(
       message => alert(message)
     );
