@@ -4,20 +4,12 @@ const nome = document.getElementById('nome');
 const email = document.getElementById('email');
 const assunto = document.getElementById('assunto');
 const mensagem = document.getElementById('mensagem');
+// const inputs = document.getElementsByClassName('form')
 
-console.log(nome)
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
 
-    const captchaResponse = grecaptcha.getResponse();
 
-    if (!captchaResponse.length > 0) {
-        throw new Error("Favor ferificar o Captcha");
-    }
-
-    const fd = new FormData(e.target);
-    const params = new URLSearchParams(fd);
+function sendEmail() {
 
     const emailBody = 
         `Nome: ${nome.value}<br>
@@ -34,12 +26,36 @@ form.addEventListener('submit', (e) => {
     }).then(
       message => alert(message)
     );
-    // fetch('http://httpbin.org/post', {
-    //     method: "POST",
-    //     body: params,
-    // })
-    // .then(res => res.json())
-    // .then(data => console.log(data))
-    // .catch(err => console.error(err))
-    
+
+}
+
+// function checkInputs() {
+//     for (const input of inputs) {
+//         if (input.value == "") {
+//             input.classList.add("error")
+//         }
+//         input.addEventListener('keyup', () => {
+//             if (input.value != "") {
+//                 input.classList.remove("error")
+//             }
+//         })
+//     }
+// }
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const captchaResponse = grecaptcha.getResponse();
+
+    if (!captchaResponse.length > 0) {
+        alert("Favor ferificar o Captcha")
+        throw new Error("Favor ferificar o Captcha");
+    }
+    // checkInputs()
+    sendEmail()
+    form.reset()
+    // console.log('foi')
+
+    // const fd = new FormData(e.target);
+    // const params = new URLSearchParams(fd);
 });

@@ -105,14 +105,14 @@
         </div>
     </div>
     <div class="BG_06">
-        <form action="./PHP/send.php" method="POST" class="wrapper_BG_06" id="contato">
+        <form id="contato" action="./PHP/send.php" method="POST" class="wrapper_BG_06">
             <span class="text_contato grid_col_1_2">Contato</span>
             <span class="text_local grid_col_2_4">Estamos numa localização muito estratégica. Entre em contato para agendarmos uma visita!</span>
-            <input id="nome" type="text" name="nome" placeholder="NOME" class="grid_col_1_3" required>
-            <input id="email" type="email" name="email" placeholder="EMAIL" class="grid_col_1_3" required>
-            <input id="assunto" type="text" name="assunto" placeholder="ASSUNTO" class="grid_col_1_3" required>
+            <input id="nome" type="text" name="nome" placeholder="NOME" class="grid_col_1_3 form" required>
+            <input id="email" type="email" name="email" placeholder="EMAIL" class="grid_col_1_3 form" required>
+            <input id="assunto" type="text" name="assunto" placeholder="ASSUNTO" class="grid_col_1_3 form" required>
             <div class="text_area grid_col_3_4 grid_row_2_5" >
-                <textarea id="mensagem" name="mensagem" rows="auto" cols="auto" placeholder="DIGITE SUA MENSAGEM" class="error" required></textarea> <!--  php mailer -->
+                <textarea id="mensagem" name="mensagem" rows="auto" cols="auto" placeholder="DIGITE SUA MENSAGEM" class="form" required></textarea> <!--  php mailer -->
                 <button id="sendMSG" type="submit">&#8594;</button>
             </div>
             <div class="wrapper_logo_footer grid_col_1_3">

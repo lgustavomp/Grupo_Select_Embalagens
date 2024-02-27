@@ -1,19 +1,13 @@
 fonts:
 Montserrat
-
 FieldsDisplay
 
+--------------------
 recaptcha https://www.youtube.com/watch?v=CKoCRQPfvaY&t=609s
 
-data-sitekey="6LeBjHwpAAAAACSgZ0bmJdHIs5d0M_VTTRpOMot_"
+sitekey="6LeBjHwpAAAAACSgZ0bmJdHIs5d0M_VTTRpOMot_"
 
 serverkey "6LeBjHwpAAAAAOyMc7R-amTAinU299HLNm7iZwTV"
-
-action="http://httpbin.org/post"
-
-mailer pkkf yhfa aeha gxbu
-
-
 -----------------
 smtpJS / elastice mail
 
@@ -21,9 +15,7 @@ user: form.gse@gmail.com
 pass: A11E6D748AC702335D9E99BE2AF60F755E9B
 server: smtp.elasticemail.com
 port: 2525
-
 smtpJS token: 28a8777e-0b48-4f71-869c-a2eaaa1c72fe
-
 ------------------
 gmail
 
