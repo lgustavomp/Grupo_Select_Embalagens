@@ -47,6 +47,11 @@
     letter-spacing: 1px;
 }
 
+.nav-link.disabled {
+    color: #abb0c5;
+    cursor: not-allowed;
+}
+
 .navbar-nav .dropdown-menu {
     background-color: #cdc5a6;
     border-radius: 0px;
