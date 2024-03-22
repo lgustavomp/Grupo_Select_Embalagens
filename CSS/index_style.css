@@ -509,11 +509,6 @@
  /* ----------07---------- */
 
  .BG_07 {
-    max-width: 2100px;
+    width: 100%;
     height: 445px;
-    margin: 0 auto;
-    overflow-x: hidden;
-    background-image: url('../Assets/JPG/mockup_maps.jpg');
-    background-position: 50% top;
-    background-repeat: no-repeat;
 }
